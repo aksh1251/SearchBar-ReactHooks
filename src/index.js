@@ -19,7 +19,7 @@ function App() {
 
   React.useEffect(() => {
     const results = people.filter(person =>
-      person.toLowerCase().includes(searchTerm)
+      person.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setSearchResults(results);
   }, [searchTerm]);
